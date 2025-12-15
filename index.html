@@ -9,7 +9,7 @@
     <meta name="description" content="瀏覽器查找的網頁列表下的註解" />
     <meta name="author" content="ZT Zhuo" />
     <!-- 常見轉跳頁面的代碼為_self -->
-    <base target="_blank" />
+    <base target="_self" />
     <!-- 瀏覽器的icon -->
     <link rel="icon" href="" />
     <link
@@ -20,15 +20,21 @@
     />
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="stylesheet" href="./styles/bubble.css" />
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
   </head>
   <body>
     <nav>
       <ul>
-        <li><a href="#">關於 Yi-Tong</a></li>
-        <li><a href="#">聯絡方式</a></li>
+        <li><a href="#intro">關於 Yi-Tong</a></li>
+        <li><a href="./contact.html">聯絡方式</a></li>
         <li><a href="#">圍棋網站</a></li>
         <li><a href="#">日本旅遊指南</a></li>
         <li><a href="#">to-do list</a></li>
+        <li><a href="#">單位轉換器</a></li>
       </ul>
     </nav>
     <main>
@@ -132,7 +138,7 @@
       </section>
       <section class="resume">
         <section class="table">
-          <table>
+          <table id="intro">
             <tr style="border-top: 2px solid gray">
               <td style="width: 20%">自我簡介</td>
               <td style="width: 80%">
@@ -188,4 +194,3 @@
     ></script>
   </body>
 </html>
-
